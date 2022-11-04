@@ -5,6 +5,7 @@ namespace Presentacion
 {
     internal static class Program
     {
+        /// hola
         /// <summary>
         /// Punto de entrada principal para la aplicación.
         /// </summary>
