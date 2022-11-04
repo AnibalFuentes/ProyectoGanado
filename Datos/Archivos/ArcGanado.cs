@@ -7,7 +7,7 @@ namespace Datos.Archivos
     public class ArcGanado
     {
         protected string ruta;
-
+        //ruta
         public ArcGanado()
         {
             this.ruta = "ganado.txt";

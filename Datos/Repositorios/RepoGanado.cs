@@ -31,7 +31,7 @@ namespace Datos.Repositorios
             }
             catch (Exception e) { throw e; }
         }
-
+        //Mappear
         public Ganado Mappear(string cadena)
         {
             try
