@@ -58,9 +58,9 @@
             this.label3.ForeColor = System.Drawing.Color.White;
             this.label3.Location = new System.Drawing.Point(8, 12);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(252, 22);
+            this.label3.Size = new System.Drawing.Size(262, 22);
             this.label3.TabIndex = 7;
-            this.label3.Text = "Compra y venta Ganadera";
+            this.label3.Text = "Compra y venta de Ganado";
             // 
             // LbUsuario
             // 
