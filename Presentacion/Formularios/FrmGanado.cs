@@ -229,5 +229,18 @@ namespace Presentacion.Formularios
         {
 
         }
+
+        private void BtnCancelar_Click(object sender, EventArgs e)
+        {
+            this.TxPeso.Clear();
+           
+        }
+
+        private void TxPesoVenta_TextChanged(object sender, EventArgs e)
+        {
+            
+        }
+
+        
     }
 }
