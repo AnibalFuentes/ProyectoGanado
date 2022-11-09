@@ -19,7 +19,9 @@ namespace Presentacion.Formularios
 
         private void button1_Click(object sender, System.EventArgs e)
         {
-
+            Comprar comprar = new Comprar();
+            this.Hide();
+            comprar.Show();
         }
 
         private void MenuPrincipal_Load(object sender, System.EventArgs e)

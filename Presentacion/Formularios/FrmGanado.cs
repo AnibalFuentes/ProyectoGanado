@@ -241,6 +241,15 @@ namespace Presentacion.Formularios
             
         }
 
-        
+        private void FrmGanado_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            DialogResult dialogo = MessageBox.Show("¿Desea cerrar el programa?",
+                "Cerrar el programa", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (dialogo == DialogResult.No) { e.Cancel = true; }
+            else
+            {
+                e.Cancel = false; Environment.Exit(1);
+            }
+        }
     }
 }
