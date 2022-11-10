@@ -103,6 +103,7 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <None Include="ClassDiagram1.cd" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -124,9 +125,9 @@
       <Project>{a8554297-ab3c-46e1-a597-994a6e031b13}</Project>
       <Name>Entidad</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Negocio\Negocio.csproj">
+    <ProjectReference Include="..\Negocio\Logica.csproj">
       <Project>{ebb8c52a-ffe8-4df1-a459-e45ab1fd61c9}</Project>
-      <Name>Negocio</Name>
+      <Name>Logica</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

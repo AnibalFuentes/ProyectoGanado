@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Entidad.Ganado" Collapsed="true">
+    <Position X="7.5" Y="0.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAyAAAAQgABAAAAEgAAAAAAEAAAAAABAAAAQAAAAEAg=</HashCode>
+      <FileName>Ganado.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Entidad.Login.Administrador" Collapsed="true">
+    <Position X="5" Y="2" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAEAAAAAAAAAAAEAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Login\Administrador.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Entidad.Login.Cliente" Collapsed="true">
+    <Position X="2.75" Y="2" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAEEAAAAAAAAAQAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Login\Cliente.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Entidad.Login.Persona" Collapsed="true">
+    <Position X="4" Y="0.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAIAAAAAgAAAAIAAAAAAAAAEAgAAAAA=</HashCode>
+      <FileName>Login\Persona.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
