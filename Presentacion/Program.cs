@@ -1,4 +1,5 @@
 ﻿using System;
+using System.IO;
 using System.Windows.Forms;
 
 namespace Presentacion
@@ -12,6 +13,9 @@ namespace Presentacion
         [STAThread]
         static void Main()
         {
+            StreamWriter ganados = new StreamWriter("ganado.txt",true);
+            ganados.Close();
+
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Login());

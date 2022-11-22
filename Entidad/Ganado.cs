@@ -67,7 +67,6 @@
 
             return PesoVenta;
         }
-
         public override string ToString()
         {
             return $"{IdGanado};{Raza};{Sexo};{Peso};{Meses};{PesoVenta_()};{PrecioCompra_()};{PrecioVenta_()};{FechaRegistro};{Estado}";
