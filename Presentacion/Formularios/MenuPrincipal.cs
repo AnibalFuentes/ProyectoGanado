@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Entidad.Login;
+using System;
 using System.Windows.Forms;
 
 namespace Presentacion.Formularios
@@ -19,9 +20,9 @@ namespace Presentacion.Formularios
 
         private void button1_Click(object sender, System.EventArgs e)
         {
-            Comprar comprar = new Comprar();
-            this.Hide();
-            comprar.Show();
+            //Comprar comprar = new Comprar(usuario);
+            //this.Hide();
+            //comprar.Show();
         }
 
         private void MenuPrincipal_Load(object sender, System.EventArgs e)

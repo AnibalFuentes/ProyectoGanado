@@ -42,9 +42,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Ganado.cs" />
-    <Compile Include="Login\Administrador.cs" />
-    <Compile Include="Login\Cliente.cs" />
-    <Compile Include="Login\Persona.cs" />
+    <Compile Include="Login\Usuario.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

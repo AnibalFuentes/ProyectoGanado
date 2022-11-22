@@ -6,7 +6,7 @@
         public string Raza { get; set; }
         public char Sexo { get; set; }
         public decimal Peso { get; set; }
-        public int Meses { get; set; }
+        public int MesesRecuperacion { get; set; }
         public decimal PrecioCompra { get; set; }
         public decimal PrecioVenta { get; set; }
         public string FechaRegistro { get; set; }
@@ -37,16 +37,16 @@
             if (Sexo == 'M')
             {
                 ValorKgGordo = 8000;
-                Peso = Peso + (Meses * 20);
-                PrecioVenta = (Peso * ValorKgGordo) - (Meses * 100000);
+                Peso = Peso + (MesesRecuperacion * 20);
+                PrecioVenta = (Peso * ValorKgGordo) - (MesesRecuperacion * 100000);
             }
             else
             {
                 if (Sexo == 'H')
                 {
                     ValorKgGordo = 7000;
-                    Peso = Peso + (Meses * 20);
-                    PrecioVenta = (Peso * ValorKgGordo) - (Meses * 100000);
+                    Peso = Peso + (MesesRecuperacion * 20);
+                    PrecioVenta = (Peso * ValorKgGordo) - (MesesRecuperacion * 100000);
                 }
             }
             return PrecioVenta;
@@ -55,13 +55,13 @@
         {
             if (Sexo == 'M')
             {
-                PesoVenta = Peso + (Meses * 25);
+                PesoVenta = Peso + (MesesRecuperacion * 25);
             }
             else
             {
                 if (Sexo == 'H')
                 {
-                    PesoVenta = Peso + (Meses * 20);
+                    PesoVenta = Peso + (MesesRecuperacion * 20);
                 }
             }
 
@@ -69,7 +69,7 @@
         }
         public override string ToString()
         {
-            return $"{IdGanado};{Raza};{Sexo};{Peso};{Meses};{PesoVenta_()};{PrecioCompra_()};{PrecioVenta_()};{FechaRegistro};{Estado}";
+            return $"{IdGanado};{Raza};{Sexo};{Peso};{MesesRecuperacion};{PesoVenta_()};{PrecioCompra_()};{PrecioVenta_()};{FechaRegistro};{Estado}";
         }
     }
 }

@@ -26,7 +26,7 @@ namespace Negocio.implementaciones
                 g.Raza = ganado.Raza;
                 g.Sexo = ganado.Sexo;
                 g.Peso = ganado.Peso;
-                g.Meses = ganado.Meses;
+                g.MesesRecuperacion = ganado.MesesRecuperacion;
                 g.PesoVenta = ganado.PesoVenta;
                 g.PrecioCompra = ganado.PrecioCompra;
                 g.PrecioVenta = ganado.PrecioVenta;

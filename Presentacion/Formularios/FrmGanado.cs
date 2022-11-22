@@ -50,7 +50,7 @@ namespace Presentacion.Formularios
             ganado.Raza = BoxRaza.Text.ToString().ToUpperInvariant().ToString();
             ganado.Sexo = char.Parse(BoxSexo.Text.ToString().ToUpperInvariant());
             ganado.Peso = decimal.Parse(TxPeso.Text.ToUpperInvariant().ToString());
-            ganado.Meses = int.Parse(BoxMeses.Text.ToString().ToUpperInvariant().ToString());
+            ganado.MesesRecuperacion = int.Parse(BoxMeses.Text.ToString().ToUpperInvariant().ToString());
             ganado.PesoVenta = decimal.Parse(TxPesoVenta.Text.ToUpperInvariant().ToString());
             ganado.PrecioCompra = decimal.Parse(TxCompra.Text.ToUpperInvariant().ToString());
             ganado.PrecioVenta = decimal.Parse(TxCompra.Text.ToUpperInvariant().ToString());

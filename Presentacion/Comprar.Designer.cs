@@ -47,9 +47,9 @@
             this._Raza = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this._Peso = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this._PrecioVenta = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.TxNomClient = new System.Windows.Forms.TextBox();
+            this.TxTelClient = new System.Windows.Forms.TextBox();
+            this.TxCorreoClient = new System.Windows.Forms.TextBox();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.txtIdProd = new System.Windows.Forms.TextBox();
@@ -102,7 +102,7 @@
             this.DatosCarrito.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(14)))), ((int)(((byte)(0)))));
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
             dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
@@ -186,7 +186,7 @@
             this.DatosGanados.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
             dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
             dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(14)))), ((int)(((byte)(0)))));
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle4.ForeColor = System.Drawing.Color.White;
             dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
@@ -258,44 +258,47 @@
             this._PrecioVenta.Name = "_PrecioVenta";
             this._PrecioVenta.ReadOnly = true;
             // 
-            // textBox1
+            // TxNomClient
             // 
-            this.textBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(29)))), ((int)(((byte)(0)))));
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox1.ForeColor = System.Drawing.Color.White;
-            this.textBox1.Location = new System.Drawing.Point(640, 13);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.ReadOnly = true;
-            this.textBox1.Size = new System.Drawing.Size(224, 26);
-            this.textBox1.TabIndex = 6;
+            this.TxNomClient.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.TxNomClient.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(29)))), ((int)(((byte)(0)))));
+            this.TxNomClient.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.TxNomClient.ForeColor = System.Drawing.Color.White;
+            this.TxNomClient.Location = new System.Drawing.Point(640, 13);
+            this.TxNomClient.Margin = new System.Windows.Forms.Padding(4);
+            this.TxNomClient.Name = "TxNomClient";
+            this.TxNomClient.ReadOnly = true;
+            this.TxNomClient.Size = new System.Drawing.Size(224, 26);
+            this.TxNomClient.TabIndex = 6;
+            this.TxNomClient.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // textBox2
+            // TxTelClient
             // 
-            this.textBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(29)))), ((int)(((byte)(0)))));
-            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox2.ForeColor = System.Drawing.Color.White;
-            this.textBox2.Location = new System.Drawing.Point(640, 47);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.ReadOnly = true;
-            this.textBox2.Size = new System.Drawing.Size(224, 26);
-            this.textBox2.TabIndex = 7;
+            this.TxTelClient.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.TxTelClient.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(29)))), ((int)(((byte)(0)))));
+            this.TxTelClient.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.TxTelClient.ForeColor = System.Drawing.Color.White;
+            this.TxTelClient.Location = new System.Drawing.Point(640, 47);
+            this.TxTelClient.Margin = new System.Windows.Forms.Padding(4);
+            this.TxTelClient.Name = "TxTelClient";
+            this.TxTelClient.ReadOnly = true;
+            this.TxTelClient.Size = new System.Drawing.Size(224, 26);
+            this.TxTelClient.TabIndex = 7;
+            this.TxTelClient.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // textBox3
+            // TxCorreoClient
             // 
-            this.textBox3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(29)))), ((int)(((byte)(0)))));
-            this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox3.ForeColor = System.Drawing.Color.White;
-            this.textBox3.Location = new System.Drawing.Point(640, 81);
-            this.textBox3.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.ReadOnly = true;
-            this.textBox3.Size = new System.Drawing.Size(224, 26);
-            this.textBox3.TabIndex = 8;
+            this.TxCorreoClient.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.TxCorreoClient.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(29)))), ((int)(((byte)(0)))));
+            this.TxCorreoClient.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.TxCorreoClient.ForeColor = System.Drawing.Color.White;
+            this.TxCorreoClient.Location = new System.Drawing.Point(640, 81);
+            this.TxCorreoClient.Margin = new System.Windows.Forms.Padding(4);
+            this.TxCorreoClient.Name = "TxCorreoClient";
+            this.TxCorreoClient.ReadOnly = true;
+            this.TxCorreoClient.Size = new System.Drawing.Size(224, 26);
+            this.TxCorreoClient.TabIndex = 8;
+            this.TxCorreoClient.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // button2
             // 
@@ -561,9 +564,9 @@
             this.Controls.Add(this.txtIdProd);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.TxCorreoClient);
+            this.Controls.Add(this.TxTelClient);
+            this.Controls.Add(this.TxNomClient);
             this.Controls.Add(this.DatosGanados);
             this.Controls.Add(this.DatosCarrito);
             this.Controls.Add(this.button1);
@@ -586,9 +589,9 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.DataGridView DatosCarrito;
         private System.Windows.Forms.DataGridView DatosGanados;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox TxNomClient;
+        private System.Windows.Forms.TextBox TxTelClient;
+        private System.Windows.Forms.TextBox TxCorreoClient;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.TextBox txtIdProd;

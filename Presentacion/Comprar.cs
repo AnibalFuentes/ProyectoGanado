@@ -1,4 +1,5 @@
 ﻿using Entidad;
+using Entidad.Login;
 using Negocio.implementaciones;
 using Presentacion.Formularios;
 using System;
@@ -15,8 +16,10 @@ namespace Presentacion
 {
     public partial class Comprar : Form
     {
-        public Comprar()
+        private static Usuario usuarioActual;
+        public Comprar(Usuario usuario)
         {
+            usuarioActual = usuario;    
             InitializeComponent();
         }
 
@@ -94,6 +97,9 @@ namespace Presentacion
 
         private void Comprar_Load(object sender, EventArgs e)
         {
+            TxNomClient.Text = usuarioActual.Nombre.ToString();
+            TxCorreoClient.Text = usuarioActual.Correo.ToString();
+            TxTelClient.Text = usuarioActual.Telefono.ToString();
             LLenarDatos();
         }
 

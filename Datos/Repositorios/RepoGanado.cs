@@ -41,7 +41,7 @@ namespace Datos.Repositorios
                 ganado.Raza = cadena.Split(';')[1];
                 ganado.Sexo = char.Parse(cadena.Split(';')[2]);
                 ganado.Peso = decimal.Parse(cadena.Split(';')[3]);
-                ganado.Meses = int.Parse(cadena.Split(';')[4]);
+                ganado.MesesRecuperacion = int.Parse(cadena.Split(';')[4]);
                 ganado.PesoVenta = decimal.Parse(cadena.Split(';')[5]);
                 ganado.PrecioCompra = decimal.Parse(cadena.Split(';')[6]);
                 ganado.PrecioVenta = decimal.Parse(cadena.Split(';')[7]);
