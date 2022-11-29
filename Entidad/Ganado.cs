@@ -1,7 +1,7 @@
 ﻿namespace Entidad
 {
     public class Ganado
-    {
+    {   //Entidad ganado
         public int IdGanado { get; set; }
         public string Raza { get; set; }
         public char Sexo { get; set; }

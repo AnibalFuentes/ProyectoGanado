@@ -3,7 +3,7 @@
   <Class Name="Entidad.Ganado" Collapsed="true">
     <Position X="7.5" Y="0.75" Width="1.75" />
     <TypeIdentifier>
-      <HashCode>AAyAAAAQgABAAAAEgAAAAAAEAAAAAABAAAAQAAAAEAg=</HashCode>
+      <HashCode>AAyEAAAAgABAAAAEgAAAAAAEAAAAAABAAAAQAAAAEAg=</HashCode>
       <FileName>Ganado.cs</FileName>
     </TypeIdentifier>
   </Class>

@@ -7,7 +7,7 @@ using System.Collections.Generic;
 namespace Negocio.implementaciones
 {
     public class GanadoImpl : IServicioGanado
-    {
+    {   //Implementacion del ganado
         public static List<Ganado> ganados;
         RepoGanado repoGanado;
 
