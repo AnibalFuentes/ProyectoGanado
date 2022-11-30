@@ -43,6 +43,7 @@
   <ItemGroup>
     <Compile Include="implementaciones\GanadoImpl.cs" />
     <Compile Include="Interfaces\IServicioGanado.cs" />
+    <Compile Include="L_Ganado.cs" />
     <Compile Include="L_Usuario.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

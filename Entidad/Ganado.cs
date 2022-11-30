@@ -12,6 +12,7 @@
         public string FechaRegistro { get; set; }
         public bool Estado { get; set; }
         public decimal PesoVenta { get; set; }
+        public string Referencia { get; set; }
         //funciones
         private decimal PrecioCompra_()
         {
