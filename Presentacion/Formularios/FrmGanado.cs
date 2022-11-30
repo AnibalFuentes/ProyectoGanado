@@ -1,7 +1,10 @@
-﻿using Entidad;
+﻿using Datos;
+using Entidad;
+using Negocio;
 using Negocio.implementaciones;
 using System;
-using System.Linq;
+using System.Collections.Generic;
+using System.Data.SqlClient;
 using System.Windows.Forms;
 
 namespace Presentacion.Formularios
@@ -12,6 +15,7 @@ namespace Presentacion.Formularios
         {
             InitializeComponent();
         }
+        
         Ganado ganado = new Ganado();
         #region LOAD
         int posicion = 0;
@@ -19,9 +23,42 @@ namespace Presentacion.Formularios
         GanadoImpl impl = new GanadoImpl();
         private void FrmGanado_Load(object sender, EventArgs e)
         {
-            Contador.Text = "Ganados registrados: " + impl.Listar().Count();
-            ListaGanado.DataSource = impl.Listar();
+            //Contador.Text = "Ganados registrados: " + impl.Listar().Count();
+            //ListaGanado.DataSource = impl.Listar();
+            LlenarDatos();
         }
+     
+        
+        private void  LlenarDatos()
+
+        {
+
+            BoxEstado.Items.Add(new OpcionCombo() { valor = 1, texto = "Disponible" });
+            BoxEstado.Items.Add(new OpcionCombo() { valor = 2, texto = "Vendido" });
+            BoxEstado.DisplayMember = "Texto";
+            BoxEstado.ValueMember = "valor";
+            BoxEstado.SelectedIndex = 0;
+
+            L_Ganado LogicaGanados = new L_Ganado();
+            List<Ganado> Ganados = LogicaGanados.Listar();
+
+            //Llenar tabla
+            foreach (Ganado item in Ganados)
+            {
+                ListaGanado.Rows.Add(new object[] {"",item.IdGanado,item.Raza,item.Sexo,item.Peso,item.PesoVenta,item.MesesRecuperacion,item.PrecioCompra,item.PrecioVenta, item.FechaRegistro,item.Referencia,
+
+
+                    item.Estado == true ? 1 : 0,
+                    item.Estado == true ? "Activo" : "Inactivo" 
+                });
+            }
+
+
+
+            
+        }
+      
+
         #endregion
 
         #region BOTONES CRUD
@@ -42,10 +79,10 @@ namespace Presentacion.Formularios
         #endregion
 
         #region FUNCIONES
-       
+
         private void CrearGanado()
         {
-            
+
             ganado.IdGanado = new Random().Next(0, 10000);
             ganado.Raza = BoxRaza.Text.ToString().ToUpperInvariant().ToString();
             ganado.Sexo = char.Parse(BoxSexo.Text.ToString().ToUpperInvariant());
@@ -57,8 +94,9 @@ namespace Presentacion.Formularios
             ganado.Estado = true;
             ganado.FechaRegistro = DateTime.Today.ToShortDateString().ToString();
             impl.Agregar(ganado);
-            ListaGanado.DataSource = null;
-            ListaGanado.DataSource = impl.Listar();
+            LlenarDatos();
+            //ListaGanado.DataSource = null;
+            //ListaGanado.DataSource = impl.Listar();
         }
         private bool ValidarCamposVacios()
         {
@@ -141,8 +179,9 @@ namespace Presentacion.Formularios
             }
             else
             {
-                ListaGanado.DataSource = null;
-                ListaGanado.DataSource = impl.Listar();
+                LlenarDatos();
+                //ListaGanado.DataSource = null;
+                //ListaGanado.DataSource = impl.Listar();
             }
         }
         private void EliminarGanado()
