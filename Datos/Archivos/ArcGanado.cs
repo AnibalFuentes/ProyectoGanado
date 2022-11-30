@@ -3,11 +3,11 @@ using System;
 using Entidad;
 
 namespace Datos.Archivos
-{   //ruta
+{  
     public class ArcGanado
     {
         protected string ruta;
-        //ruta
+        
         public ArcGanado()
         {
             this.ruta = "ganado.txt";

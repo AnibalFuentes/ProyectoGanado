@@ -7,7 +7,7 @@ using Datos.Archivos;
 namespace Datos.Repositorios
 {
     public class RepoGanado : ArcGanado
-    {   //Repositorio de datos
+    {   
         public RepoGanado() : base()
         {
         }
