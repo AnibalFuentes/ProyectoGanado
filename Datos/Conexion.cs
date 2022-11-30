@@ -2,7 +2,7 @@
 using System.Data.SqlClient;
 
 namespace Datos
-{
+{   //Conexion a la base de datos
     public class Conexion
     {
 

@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 namespace Datos
 {
     public class D_Usuario
-    {
+    {   //Validacion de los usuarios
         public List<Usuario> ValidarUsuarios()
         {
             List<Usuario> usuarios = new List<Usuario>();
